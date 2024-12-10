@@ -1,0 +1,26 @@
+.user-item-wrapper {
+    border-bottom: 1px solid #90caf9;
+    width: 100%;
+    padding: 8px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50px repeat(5, 1fr);
+    gap: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #ffffff2c;
+    }
+
+    .item-data {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        word-break: break-all;
+
+        &.col-id {
+            justify-self: center;
+
+        }
+    }
+}
